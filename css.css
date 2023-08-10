@@ -1,0 +1,294 @@
+/* Reset the default styles of the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background color of the page */
+body {
+    background-color: #4f4a4a;
+}
+
+/* Style the container of the page */
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* Style the header section */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #2f4f4f;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+
+/* Style the form */
+form {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: -50px;
+    position: relative;
+}
+  
+.left-logo-container,
+.right-logo-container {
+    position: absolute;
+    top: 40;
+}
+  
+.left-logo {
+    width: 90px;
+    height: 90px;
+    margin-top: -40px;
+    border-radius: 50%;
+}
+  
+.left-logo-container {
+    left: 20px;
+}
+  
+.right-logo {
+    width: 90px;
+    height: 90px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+  
+.right-logo-container {
+    right: 20px;
+}
+
+/* Style the input boxes */
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.inputbox label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*Layout of Names(Husband and Maiden)*/
+.name-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.name-group2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  
+.name-inputs {
+    display: flex;
+}
+  
+.name-inputs input[type="text"] {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.inputbox input[type="text"],
+.inputbox input[type="number"],
+.inputbox input[type="date"],
+.inputbox input[type="checkbox"],
+.inputbox input[type="email"],
+.inputbox input[type="tel"],
+.inputbox input[type="password"],
+.inputbox input[type="url"] {
+    display: block;
+    width: 200px;
+    margin-right: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+/*Tax Numbers*/
+.tax-number-group {
+    margin-top: 10px;
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tax-number-group input[type="text"] {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+
+/*Making 2 columns*/
+.two-cols {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -30px;
+}
+
+.witness-text p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.people-two-cols-two {
+    margin-right: 150px;
+}
+
+/*Witness Layout*/
+input[name="people"] {
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+}
+  
+.age-gender-bday{
+    display: flex;
+    justify-content: space-between;
+}
+
+.purposes input[type="text"]{
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.num-copies {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    padding: 15px;
+}
+
+.inputbox, .purposes{
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+/* Reference Numbers*/
+.ref-numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: -100px;
+}
+.ref-numbers input {
+    display: block;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ref-numbers label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+
+/*Number of Copies*/
+.num-copies{
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num-copies label{
+    padding: 0 20px 0 5px;
+    font-size: 14px;
+}
+.num-copies label, .num-copies input{
+    cursor: pointer;
+}
+
+.inputbox label, .purposes, .ref-numbers{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Button*/
+.button-container{
+    margin: 15px 0;
+}
+.button-container button{
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa076b, #61045f);
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .inputbox label {
+      display: block;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+}

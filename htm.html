@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marriage Registration Form</title>
+	<link rel="stylesheet" href="css.css">
+	<link rel="icon" type="image/png" href="icons.png">
+</head>
+
+<body>
+	  
+	<div class="container">
+		<div class="header">
+			<p>City Civil Registrar's Office</p>
+			<p>And Philippine Statistic Office</p>
+			<h1>MARRIAGE CERTIFICATE</h1>
+		</div>
+		
+		<form action="" method="post">
+			<div class="logo-container">
+				<div class="left-logo-container">
+				  <img src="PSA.png" alt="Left logo" class="left-logo">
+				</div>
+				<div class="right-logo-container">
+				  <img src="SJDM.png" alt="Right logo" class="right-logo">
+				</div>
+			  </div>
+			<div class="container">
+				<div class="content">
+					<div class="num-copies"> 
+						<label for="copies">Number of Copies:</label>
+						<input type="checkbox" id="one-copy" name="one-copy" value="1">
+						<label for="one-copy">One</label>
+						<input type="checkbox" id="two-copies" name="two-copies" value="2">
+						<label for="two-copies">Two</label>
+						<input type="checkbox" id="three-copies" name="three-copies" value="3 or more">
+						<label for="others">Others (specify)</label>
+						<input type="text" id="others" name="others" style="border: none; border-bottom: 1px solid black;"><br>
+					</div>
+					<div class="ref-numbers">
+						<div>
+							<label for="husband-ref-no">Birth Reference No. of Husband:</label>
+							<input type="text" id="husband-ref-no" name="husband-ref-no" minlength="13" maxlength="13" placeholder="Enter 13-digit number" required>
+							<br>
+						</div>
+						<div>
+							<label for="husband-ref-no">Birth Reference No. of Wife:</label>
+							<input type="text" id="husband-ref-no" name="husband-ref-no" minlength="13" maxlength="13" placeholder="Enter 13-digit number" required>
+							<br>
+						</div>
+					</div>
+
+					<h2>PERSONAL DETAILS</h2>
+					<div class="inputbox">
+            <div class="name-group">
+              <label for="groom-name">NAME OF HUSBAND:</label>
+              <div class="name-inputs">
+                <input type="text" id="groom-last-name" name="groom-last-name" placeholder="Last Name" required>
+                <input type="text" id="groom-first-name" name="groom-first-name" placeholder="First Name" required>
+                <input type="text" id="groom-middle-name" name="groom-middle-name" placeholder="Middle Name" required>
+              </div>
+            </div>
+			<div class="age-gender-bday">
+				<div class="age">
+					<label for="age">AGE:</label>
+					<input type="number" id="age" name="age" placeholder="Age" required>
+				</div>
+				<div class="birthday">
+					<label for="birthday">BIRTHDAY:</label>
+					<input type="date" id="birthday" name="birthday" placeholder="Birthday" required>
+				</div>
+				<div class="gender">
+					<label for="gender">GENDER:</label>
+					<input type="text" id="gender" name="gender" placeholder="Gender" required>
+				</div>
+			</div>
+
+            <div class="tax-number-group">
+              <label for="groom-tax-number">TAX NUMBER:</label>
+              <input type="text" id="groom-tax-number" name="groom-tax-number" minlength="9" maxlength="9" placeholder="Enter 9-digit Number" required>
+            </div>
+          </div>
+        
+          <div class="inputbox">
+            <div class="name-group2">
+              <label for="bride-name">MAIDEN NAME OF WIFE:</label>
+              <div class="name-inputs">
+                <input type="text" id="bride-last-name" name="bride-last-name" placeholder="Last Name" required>
+                <input type="text" id="bride-first-name" name="bride-first-name" placeholder="First Name" required>
+                <input type="text" id="bride-middle-name" name="bride-middle-name" placeholder="Middle Name" required>
+              </div>
+            </div>
+		<div class="age-gender-bday">
+				<div class="age">
+					<label for="age">AGE:</label>
+					<input type="number" id="age" name="age" placeholder="Age" required>
+				</div>
+				<div class="birthday">
+					<label for="birthday">BIRTHDAY:</label>
+					<input type="date" id="birthday" name="birthday" placeholder="Birthday" required>
+				</div>
+				<div class="gender">
+					<label for="gender">GENDER:</label>
+					<input type="text" id="gender" name="gender" placeholder="Gender" required>
+				</div>
+		</div>
+            <div class="tax-number-group">
+              <label for="bride-tax-number">TAX NUMBER:</label>
+              <input type="text" id="bride-tax-number" name="bride-tax-number" minlength="9" maxlength="9" placeholder="Enter 9-digit Number" required>
+            </div>
+          </div>
+		  			<div class="two-cols">
+						<div class="inputbox">
+							<label for="marriage-date">DATE OF MARRIAGE:</label>
+							<input type="date" id="marriage-date" name="marriage-date" required><br>
+						</div>
+						<div class="inputbox">
+							<label for="marriage-location">PLACE OF MARRIAGE:</label>
+							<input type="text" id="marriage-location" name="marriage-location" required><br>
+						</div>
+					</div>
+					<div class="witness-text">
+						<p>WITNESS:</p>
+					</div>
+					<div class="people">
+						<div class="people-two-cols-one">
+							<div class="inputbox">
+								<input type="text" id="people" name="people" placeholder="Witness" required>
+							</div>
+							<div class="inputbox">
+								<input type="text" id="people" name="people" placeholder="Witness" required>
+							</div>
+						</div>
+						<div class="people-two-cols-two">
+							<div class="inputbox">
+								<input type="text" id="people" name="people" placeholder="Witness" required>
+							</div>
+							<div class="inputbox">
+								<input type="text" id="people" name="people" placeholder="Witness" required>
+							</div>
+						</div>
+					</div>
+					<div class="purposes">
+						<label for="copies">PURPOSE:</label>
+						<input type="text" id="purpose" name="purpose" required><br>
+					</div>
+					<div class="button-container">
+						<button type="submit">REGISTER</button>
+				</div>
+			</div>
+        </form>
+        
+        <footer>
+            <p>UNCLAIMED DOCUMENTS AFTER 90 DAYS WILL BE DISPOSED OF</p>
+        </footer>
+    </body>
+    </html>
+    
